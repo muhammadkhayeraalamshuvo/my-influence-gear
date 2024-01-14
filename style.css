@@ -192,7 +192,49 @@ nav
 {
     border-radius: 0px;
 }
+/* footer section */
+footer{
+    margin-top: 100px;
+    background: #0A0826;
+    height: 400px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 
+}
+
+.div-footer
+{
+    text-align: center;
+    display: grid;
+    gap: 10px;
+}
+.div-footer h2{
+    font-size: 20px;
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-weight: 700px;
+}
+.copyright
+{
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-weight: 700px;
+    font-size: 14px;
+}
+.footer-icons
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.footer-icons a
+{
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--Text-Gray-300, #D9DBE1);
+}
 /* responsive works */
 @media screen and (max-width:576px) {
     header{
