@@ -26,6 +26,7 @@
 header{
     padding: 40px 100px;
     border: 2px solid red;
+    margin-bottom: 100px;
 }
 nav
 {
@@ -100,10 +101,29 @@ nav
     color: #FFF;
 }
 
+/* body parts */
+.sponspor-section
+{
+    padding: 40px 100px;
+    border: 2px solid red;
+    margin-bottom: 100px;
+}
+.sponspor-item
+{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid slateblue;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
 /* responsive works */
 @media screen and (max-width:576px) {
     header{
         padding: 0px 0px;
+        margin-bottom: 40px;
     }
     nav
     {
@@ -122,11 +142,25 @@ nav
         width: 100%;
         text-align: center;
     }
+    /* body parts */
+    /* sponspor section */
+    .sponspor-section{
+        padding: 0px 0px;
+        margin-bottom: 40px;
+        /* width: 100%; */
+    }
+    .sponspor-item{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+
 }
 
 /* medium size device */
 
-@media screen and (min-width:577px) and (max-width: 768px) {
+@media screen and (min-width:577px) and (max-width: 825px) {
     header{
         padding: 0px 0px;
     }
@@ -152,5 +186,18 @@ nav
     }
     #head-title{
         margin-bottom: 30px;
+    }
+    /* body parts */
+
+    /* sponspor section */
+     
+    .sponspor-section{
+        padding: 0px 0px;
+        margin-bottom: 40px;
+        /* width: 100%; */
+    }
+    .sponspor-item{
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
