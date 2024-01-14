@@ -99,3 +99,58 @@ nav
     text-decoration: none;
     color: #FFF;
 }
+
+/* responsive works */
+@media screen and (max-width:576px) {
+    header{
+        padding: 0px 0px;
+    }
+    nav
+    {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .header-lower-part 
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-about
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* medium size device */
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+    header{
+        padding: 0px 0px;
+    }
+    nav
+    {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .product-nav{
+        gap: 30px;
+    }
+    .header-lower-part 
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-about
+    {
+        width: 100%;
+        text-align: center;
+    }
+    #head-title{
+        margin-bottom: 30px;
+    }
+}
