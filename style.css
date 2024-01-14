@@ -161,6 +161,15 @@ nav
     font-size: 11px;
     color: #787885;
 }
+.collection-section > p
+{
+    text-align: right;
+    margin-top: 40px;
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 16px;
+    font-weight: 700;
+}
+
 
 /* responsive works */
 @media screen and (max-width:576px) {
@@ -215,6 +224,12 @@ nav
      gap: 30px;
      padding:50px;
    }
+   .collection-section > p
+   {
+       margin-top: 0px;
+       padding-right: 50px;
+   }
+
 
 
 }
@@ -270,5 +285,10 @@ nav
     .collection-item
     {
         padding: 30px;
+    }
+    .collection-section > p
+    {
+        margin-top: 0px;
+        padding-right: 30px;
     }
 }
