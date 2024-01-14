@@ -25,7 +25,7 @@
 /* header part */
 header{
     padding: 40px 100px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-bottom: 100px;
 }
 nav
@@ -105,19 +105,62 @@ nav
 .sponspor-section
 {
     padding: 40px 100px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin-bottom: 100px;
 }
 .sponspor-item
 {
     display: flex;
     justify-content: space-evenly;
-    border: 2px solid slateblue;
+    /* border: 2px solid slateblue; */
     align-items: center;
     gap: 30px;
 }
+/* collection section */
+.collection-section
+{
+    /* border: 2px solid red; */
+    padding: 40px 150px;
+}
+.collection-item
+{
+    /* border: 2px solid saddlebrown; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
 
-
+}
+.collection-section h2
+{
+    text-align: center;
+    margin-bottom: 50px ;
+}
+.item {
+    padding:25px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.item img{
+    width: 100%;
+    
+}
+.item-p
+{
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--Gray-50, #787885);
+    margin-top: 4px;
+}
+.fa-star
+{
+    color: gold;
+    font-size: 10px;
+}
+.dot{
+    font-size: 11px;
+    color: #787885;
+}
 
 /* responsive works */
 @media screen and (max-width:576px) {
@@ -154,6 +197,24 @@ nav
         gap: 20px;
     }
 
+   /*collection section  */
+   .collection-section
+   {
+      padding: 0px 0px;
+      margin-bottom: 40px;
+   }
+   .collection-section h2
+   {
+     margin-bottom:10px ;
+   }
+   .collection-item
+   {
+    
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     padding:50px;
+   }
 
 
 }
@@ -199,5 +260,15 @@ nav
     .sponspor-item{
         flex-wrap: wrap;
         gap: 20px;
+    }
+
+    .collection-section
+    {
+       padding: 0px 0px;
+       margin-bottom: 40px;
+    }
+    .collection-item
+    {
+        padding: 30px;
     }
 }
